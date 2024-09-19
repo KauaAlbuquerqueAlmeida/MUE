@@ -1,0 +1,229 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 16px;
+}
+
+nav ul li a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #555;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+}
+
+article p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: rgb(11, 11, 11);
+    color: #f0f0f0;
+}
+
+body.dark-theme .content {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+body.dark-theme .content p{
+
+    color: white;
+
+}
+
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#theme-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.5s;
+}
+
+#theme-toggle:active #theme-icon {
+    transform: scale(0.9);
+}
+
+.gallery-container {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.character-card {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: scale(1.1);
+}
+
+.character-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+.character-card:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn-div{
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#btn-div2{
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#btn-div3{
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#btn-div4{
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#btn-div5{
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+body.dark-theme #btn-div {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+body.dark-theme #btn-div2 {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+body.dark-theme #btn-div3 {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+body.dark-theme #btn-div4 {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+body.dark-theme #btn-div5 {
+    background-color: #444;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+
+
