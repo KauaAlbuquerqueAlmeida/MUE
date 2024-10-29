@@ -10,12 +10,12 @@ themeToggleButton.addEventListener("click", () => {
     if (body.classList.contains("light-theme")) {
         // Mudar para tema escuro
         body.classList.replace("light-theme", "dark-theme");
-        themeIcon.src = "moon.png";
+        themeIcon.src = "./img/moon.png";
         themeIcon.alt = "Tema Escuro";
     } else {
         // Mudar para tema claro
         body.classList.replace("dark-theme", "light-theme");
-        themeIcon.src = "sun.png";
+        themeIcon.src = "./img/sun.png";
         themeIcon.alt = "Tema Claro";
     }
 });
